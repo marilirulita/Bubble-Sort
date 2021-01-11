@@ -11,9 +11,9 @@ def bubble_sort(test)
       # if the number i is higher than i+1, then switch places, and continue checking
       next unless test[i] > test[i + 1]
 
-        m = test[i]
-        test[i] = test[i + 1]
-        test[i + 1] = m
+      m = test[i]
+      test[i] = test[i + 1]
+      test[i + 1] = m
     end
   end
   test
@@ -32,8 +32,8 @@ def bubble_sort_by(test)
       next unless yield(test[i], test[i + 1]).positive?
 
       m = test[i]
-        test[i] = test[i + 1]
-        test[i + 1] = m
+      test[i] = test[i + 1]
+      test[i + 1] = m
     end
   end
   test
