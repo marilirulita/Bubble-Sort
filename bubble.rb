@@ -7,10 +7,10 @@ test_array2 = ["a", "c", "b"]
 def bubble_sort(test)
   x = test.length-2
   m = 0
-  5.times do
+  test.length.times do
     #I need to compare the i number in array with the next
     for i in 0..x
-    #1.1 if the number i is higher than i+1, then change site, else continue checking
+    #if the number i is higher than i+1, then change site, else continue checking
     if test[i] > test[i+1]
       m = test[i]
       test[i] = test[i+1]
@@ -21,4 +21,4 @@ def bubble_sort(test)
   p test
 end
 
-bubble_sort(test_array2)
+bubble_sort(test_array)
