@@ -9,12 +9,11 @@ def bubble_sort(test)
     # I need to compare the i number in array with i+1
     (0..test.length - 2).each do |i|
     # if the number i is higher than i+1, then switch places, and continue checking
-    if test[i] > test[i+1]
-      m = test[i]
-      test[i] = test[i+1]
-      test[i+1] = m
-    end
-    end
+      next unless test[i] > test[i + 1]
+        m = test[i]
+        test[i] = test[i+1]
+        test[i+1] = m
+      end
   end
   test
 end
