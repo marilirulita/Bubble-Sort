@@ -11,8 +11,8 @@ def bubble_sort(test)
     # if the number i is higher than i+1, then switch places, and continue checking
       next unless test[i] > test[i + 1]
         m = test[i]
-        test[i] = test[i+1]
-        test[i+1] = m
+        test[i] = test[i + 1]
+        test[i + 1] = m
       end
   end
   test
@@ -26,19 +26,18 @@ def bubble_sort_by(test)
   # create a loop for check n times the array
   test.length.times do
     # I need to compare the i number in array with i+1
-    for i in 0..test.length-2
+    (0..test.length - 2).each do |i|
     # compare element one to second, if difference is positive then switch places, and continue checking
-    if yield(test[i], test[i+1]).positive?
-      m = test[i]
-      test[i] = test[i+1]
-      test[i+1] = m
-    end
-    end
+      next unless yield(test[i], test[i + 1]).positive?
+        m = test[i]
+        test[i] = test[i + 1]
+        test[i + 1] = m
+      end
   end
   test
 end
 
-test_arra = bubble_sort_by(["hi", "hey", "hello"]) do |left,right|
+test_arra = bubble_sort_by(%w['hi', 'hey', 'hello']) do |left,right|
   left.length - right.length
 end
 
