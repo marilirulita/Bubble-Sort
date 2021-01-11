@@ -2,15 +2,15 @@
 
 # Bubble-Sort
 
-> This project is an implement of the bubble sort algorithm, focused on the use of yield and passing a block to a method.One paragraph statement about the project.
+> This project is an implement of the bubble sort algorithm, focused on the use of yield and passing a block to a method.
 
 ## Built With
 
 - Ruby
 
 ## Getting Started
-- open CMD
-- git clone https://github.com/marilirulita/Bubble-Sort.git
+- Open CMD
+- Git clone https://github.com/marilirulita/Bubble-Sort.git
 - Make sure Ruby is installed on your computer
 
 ## Authors
